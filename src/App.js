@@ -24,9 +24,10 @@ function App() {
            <Home></Home>
           </Route>
 
-          <Route path="/">
+          <Route path="">
             <Home></Home>
           </Route>
+         
 
         </Switch>
       </Router>
