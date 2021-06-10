@@ -3,6 +3,23 @@ import React from 'react';
 import facebookImage from '../../images/Facebook.png';
 import twitterImage from '../../images/Twitter.png';
 import youtubeImage from '../../images/YouTube.png';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import {
+    faGithubAlt,
+    faGoogle,
+    faFacebook,
+    faTwitter,
+    faYoutube
+  } from '@fortawesome/free-brands-svg-icons';
+  
+  library.add(
+    faGoogle,
+    faFacebook,
+    faTwitter
+  );
+
+
 
 const FootballEssy = () => {
     return (
@@ -22,10 +39,13 @@ Football in India<br/><br/><br/>
 If we look at the scenarios of a few years back then we can say that football was not a popular game in except West Bengal. Also, Indians do not take much interest in playing football. Likewise, the All India Football Federation (AIFF) has some limited resources and limited support from the government.
 </h3>
 
-                     <div style={{textAlign:'center'}}>
-                     <a href="https://facebook.com"> <img style={{height:'70px',width:'70px'}} src={facebookImage} alt="" /></a>
-                     <a href="https://www.twitter.com"><img style={{height:'70px',width:'70px'}}src={twitterImage} alt="" /></a>
-                     <a href="https://www.youtube.com"><img style={{height:'70px',width:'70px'}} src={youtubeImage} alt="" /></a>
+                     <div style={{textAlign:'center',height:'50px'}}>
+
+                     <a style={{color:'white'}} href="https://www.facebook.com"><FontAwesomeIcon style={{margin:'20px'}} icon={faFacebook} /></a>
+
+                     <a style={{color:'white'}} href="https://www.youtube.com"><FontAwesomeIcon style={{margin:'20px'}} icon={faYoutube} /></a>
+
+                     <a style={{color:'white'}} href="https://www.google.com"><FontAwesomeIcon style={{margin:'20px'}} icon={faGoogle} /></a>
                      </div>
                     
                      

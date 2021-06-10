@@ -1,9 +1,25 @@
 import React from 'react';
 import { Button,Card } from 'react-bootstrap';
 import '../LeagueCard/league-card.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faInfoCircle, faArrowRight } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowRight,faFacebookF } from '@fortawesome/free-solid-svg-icons';
 import { useHistory } from "react-router-dom";
+import { library } from '@fortawesome/fontawesome-svg-core';
+import {
+    faGithubAlt,
+    faGoogle,
+    faFacebook,
+    faTwitter
+  } from '@fortawesome/free-brands-svg-icons';
+  
+  library.add(
+    
+    faGoogle,
+    faFacebook,
+    faTwitter
+  );
+
+
 
 const LeagueCard = (props) => {
     const{title,image,sportsType,id}=props.league;
